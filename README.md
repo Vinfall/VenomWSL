@@ -26,7 +26,29 @@ If you rename it, you can register with a different name and have multiple insta
 
 ## Init
 
-Developing...
+```sh
+# Update system to latest as it's rolling release
+scratch sync
+scratch outdate
+scratch sysup -y
+# Check integrity just in case
+scratch integrity
+# Check broken packages
+revdep
+```
+
+Then follow [Configuring system](https://venomlinux.org/wiki#installation.configuring-system) on Venom Linux wiki.
+Skip things like fstab, kernel and bootloader as WSL covers that already.
+You don't need to enter chroot environment as well since the installation (importing the tarball) is done during [#Install](#install).
+
+You may also want to enable `nonfree` repo in [`/etc/scratch.repo`](https://venomlinux.org/wiki#package-manager.etcscratchpkgrepo)
+and setup package aliases in [`/etc/scratchpkg.alias`](https://venomlinux.org/wiki#package-manager.etcscratchpkgalias) to avoid compiling from source.
+
+For example, use rust binary as compiling is resource consuming.
+
+```sh
+echo 'rust rust-bin' | sudo tee -a /etc/scratchpkg.alias
+```
 
 ## How-to-Use (for Installed Instance)
 

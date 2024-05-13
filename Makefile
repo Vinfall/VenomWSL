@@ -19,7 +19,7 @@ ziproot: Launcher.exe rootfs.tar.xz
 	@echo -e '\e[1;31mBuilding ziproot...\e[m'
 	mkdir ziproot
 	cp Launcher.exe ziproot/${LNCR_EXE}
-	cp rootfs.tar.gz ziproot/
+	cp rootfs.tar.xz ziproot/
 
 exe: Launcher.exe
 Launcher.exe: icons.zip
@@ -32,7 +32,7 @@ icons.zip:
 	$(DLR) $(DLR_FLAGS) $(LNCR_ZIP_URL) -o icons.zip
 
 rootfs.tar.xz:
-	@echo -e '\e[1;31mDownloading base.tar.gz...\e[m'
+	@echo -e '\e[1;31mDownloading rootfs...\e[m'
 	$(DLR) $(DLR_FLAGS) $(BASE_URL_S6) -o rootfs.tar.xz
 
 clean:

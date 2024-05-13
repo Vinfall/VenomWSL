@@ -1,10 +1,13 @@
 # VenomWSL
 
-Venom Linux on WSL2 (Windows 10 FCU or later)
-based on [wsldl](https://github.com/yuk7/wsldl).
+Venom Linux on WSL2 (Windows 10 FCU or later) based on [wsldl](https://github.com/yuk7/wsldl).
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Vinfall/VenomWSL.svg?style=flat-square)
+
+## Disclaimer
+
+THIS REPO IS NOT AFFILIATE TO THE OFFICIAL "VENOM LINUX" DISTRIBUTION IN ANY WAY!
 
 ## Requirements
 

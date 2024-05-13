@@ -17,7 +17,7 @@ THIS REPO IS NOT AFFILIATE TO THE OFFICIAL "VENOM LINUX" DISTRIBUTION IN ANY WAY
 
 ## Install
 
-1. Download installer zip from [release](https://github.com/Vinfall/VenomWSL/releases/latest) or [monthly action build](https://github.com/Vinfall/VenomWSL/releases/tag/action-build) (recommended)
+1. Download installer zip from [release](https://github.com/Vinfall/VenomWSL/releases/latest) or [action build](https://github.com/Vinfall/VenomWSL/releases/tag/action-build) (recommended)
 2. Extract all files in zip file to same directory (e.g. `C:\WSL\Venom`)
 3. Run `Venom.exe` to Extract rootfs and Register to WSL
 
@@ -42,7 +42,7 @@ Skip things like fstab, kernel and bootloader as WSL covers that already.
 You don't need to enter chroot environment as well since the installation (importing the tarball) is done during [#Install](#install).
 
 You may also want to enable `nonfree` repo in [`/etc/scratch.repo`](https://venomlinux.org/wiki#package-manager.etcscratchpkgrepo)
-and setup package aliases in [`/etc/scratchpkg.alias`](https://venomlinux.org/wiki#package-manager.etcscratchpkgalias) to avoid compiling from source.
+and setup package aliases in [`/etc/scratchpkg.alias`](https://venomlinux.org/wiki#package-manager.etcscratchpkgalias) to avoid compiling certain packages from source.
 
 For example, use rust binary as compiling is resource consuming.
 
@@ -92,7 +92,7 @@ VenomWSL can be built on GNU/Linux or WSL.
 `curl`, `bsdtar`, `jq` and `unzip` is required for build.
 
 By default it builds s6 variant.
-Change `$(BASE_URL_S6)` to `BASE_URL_SYSV` if you prefer SysV variant.
+Change `$(BASE_URL_S6)` to `BASE_URL_SYSV` in [Makefile](Makefile) if you prefer SysV variant.
 
 ```bash
 # Install build tools

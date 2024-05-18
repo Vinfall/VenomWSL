@@ -82,7 +82,7 @@ Usage :
 ### Uninstall
 
 ```powershell
-.\Denom.exe clean
+.\Venom.exe clean
 ```
 
 ## How-to-Build

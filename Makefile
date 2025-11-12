@@ -5,6 +5,7 @@ DLR=curl
 DLR_FLAGS=--silent --location
 BASE_URL_SYSV="https://nc.abetech.es/index.php/s/QX2taybWRBnyLFS/download?path=%2F&files=venomlinux-rootfs-sysv-x86_64.tar.xz"
 BASE_URL_S6="https://nc.abetech.es/index.php/s/mtpAqi7BBPDXEPB/download?path=%2F&files=venomlinux-rootfs-s6-x86_64.tar.xz"
+BASE_URL_RUNIT="https://nc.abetech.es/index.php/s/AcgotCfkEbJCajX/download?path=%2F&files=venomlinux-rootfs-runit-x86_64.tar.xz"
 LNCR_ZIP_URL=https://github.com/yuk7/wsldl/releases/download/`curl https://api.github.com/repos/yuk7/wsldl/releases/latest -s | jq .name -r`/icons.zip
 LNCR_ZIP_EXE=Venom.exe
 

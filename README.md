@@ -102,7 +102,7 @@ VenomWSL can be built on GNU/Linux or WSL.
 `curl`, `bsdtar`, `jq` and `unzip` is required for build.
 
 By default it builds s6 variant.
-To use SysV, change `$(BASE_URL_S6)` to `BASE_URL_SYSV` in [Makefile](Makefile).
+To use SysV/runit, change `$(BASE_URL_S6)` respectively in [Makefile](Makefile).
 
 ```bash
 # Install build tools
